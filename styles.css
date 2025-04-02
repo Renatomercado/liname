@@ -12,6 +12,7 @@ h1, h2, th, td, p {
     color: #0a0a0a; /* Asegura que todos los textos importantes sean más oscuros */
     font-weight: bold; /* Hacer el texto más destacado */
 }
+
 /* Header */
 .header-container {
     display: flex;
@@ -100,7 +101,7 @@ button:hover {
 
 /* Tablas */
 table {
-    width: 100%;
+    width: 90%; /* Ancho aumentado para que sea más grande */
     margin: 10px auto;
     border-collapse: collapse;
     background: white;
@@ -111,7 +112,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #000; /* Línea divisoria negra */
 }
 
 th, td {
@@ -164,9 +165,9 @@ th {
     max-height: 500px;  /* Se puede ajustar la altura máxima */
     object-fit: contain;  /* Mantiene la proporción de la imagen */
     border-radius: 10px;
-    
 }
 
+/* Contenedor de los partidos */
 .partidos-container {
     display: flex;
     justify-content: center;
@@ -175,7 +176,7 @@ th {
     flex-wrap: wrap; /* Permite ajustar si el espacio es reducido */
 }
 
-/* Estilo para cada tabla de partidos */
+* Estilo para cada tabla de partidos */
 .partidos-dia {
     width: 48%; /* Ajusta el tamaño para que ocupen la mitad del contenedor */
     background-color: white;
@@ -187,18 +188,25 @@ th {
 /* Ajuste para las tablas dentro de partidos */
 .partidos-dia table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Importante para que los bordes se combinen */
 }
 
 .partidos-dia th, .partidos-dia td {
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     font-size: 16px;
+    border: 1px solid #000; /* Borde negro */
 }
 
 .partidos-dia th {
     background-color: #007BFF;
-    color: white;
+    color: rgb(228, 31, 31);
+}
+
+/* Evitar borde derecho en la última columna */
+.partidos-dia td:last-child,
+.partidos-dia th:last-child {
+    border-right: none;
 }
 
 /* Estilos para los títulos de los partidos */
@@ -263,7 +271,7 @@ th {
 
 /* Tablas */
 table {
-    width: 100%;
+    width: 90%; /* Ancho aumentado */
     margin: 10px auto;
     border-collapse: collapse;
     background: white;
