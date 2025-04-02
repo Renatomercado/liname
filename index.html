@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINAME SUB 18 QUILLOTA 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-container">
+        <img src="https://pbs.twimg.com/profile_images/1015933869/Copia_de_Copia_de_Logo_Fevochi_400x400.JPG" class="header-logo">
+        <h1>CLASIFICATORIA LINAME SUB 18 SAN MARTIN - QUILLOTA 2025</h1>
+        <img src="https://www.fevochi.cl/wp-content/uploads/2025/01/CIRCUITO-NACIONAL-DE-VOLEIBOL-PLAYA-2024-32-1024x1024.png" class="header-logo">
+    </header>
+
+    <!-- Imagen destacada -->
+    <div class="imagen-destacada">
+        <img src="liname.jpg" alt="Imagen del Torneo">
+    </div>
+
+    <!-- Selección de grupo -->
+    <div class="grupo-selector">
+        <h2>Selecciona un Grupo</h2>
+        <select id="grupoSelect">
+            <option value="index.html">Inicio</option>
+            <option value="grupoA.html">Partidos Grupo A</option>
+            <option value="grupoB.html">Partidos Grupo B</option>
+            <option value="finales.html">Finales</option> 
+        </select>
+        <button onclick="irAGrupo()">Ver Partidos</button>
+    </div>
+
+    <!-- Grupos A y B -->
+    <div class="grupos-container">
+        <div class="grupo">
+            <h2>Grupo A</h2>
+            <table>
+                <tr><th>Equipos</th></tr>
+                <tr><td>Boston College</td></tr>
+                <tr><td>Planeta Voley La Serena</td></tr>
+                <tr><td>SLA Valdivia</td></tr>
+                <tr><td>Arturo Prat San Felipe</td></tr>
+                <tr><td>Estadio Español</td></tr>
+                <tr><td>Dragons de Rancagua</td></tr>
+            </table>
+        </div>
+
+        <div class="grupo">
+            <h2>Grupo B</h2>
+            <table>
+                <tr><th>Equipos</th></tr>
+                <tr><td>Paul Harris Quillota</td></tr>
+                <tr><td>GIBA Requinoa</td></tr>
+                <tr><td>Vosther Voley V. del Mar</td></tr>
+                <tr><td>Enigma Puente Alto</td></tr>
+                <tr><td>Puma Copiapó</td></tr>
+                <tr><td>San Martín de Quillota</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Botón de Transmisión en Vivo -->
+    <section class="live-stream">
+        <a href="https://www.youtube.com/@irtvdeportes" target="_blank" class="live-button">🔴 Transmisión en Vivo</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 LINAME SUB 18 - Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function irAGrupo() {
+            var grupo = document.getElementById("grupoSelect").value;
+            window.location.href = grupo;
+        }
+    </script>
+
+</body>
+</html>
