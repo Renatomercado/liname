@@ -300,3 +300,18 @@ th {
     bottom: 0;
     width: 100%;
 }
+
+.mapa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.mapa-container iframe {
+    width: 90%; /* Ajusta el ancho automáticamente */
+    max-width: 600px; /* Evita que sea demasiado grande en pantallas grandes */
+    height: 450px; /* Mantiene la altura */
+    border: 0;
+}
