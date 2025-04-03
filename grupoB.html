@@ -53,27 +53,68 @@
     <!-- Título y Grupo -->
     <h2>Partidos Grupo B - Gimnasio Municipal CORVI</h2>
     
-    <!-- Tabla de Equipos -->
+    <!-- Tabla de Equipos Grupo B -->
 <div class="grupos-container">
     <div class="grupo">
         <h3>Equipos Grupo B</h3>
-        <table>
+        <table id="tabla-equipos-b">
             <thead>
                 <tr>
                     <th>Equipos</th>
+                    <th>PTS</th>
+                    <th>PJ</th>
+                    <th>PG</th>
+                    <th>PP</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Paul Harris Quillota</td></tr>
-                <tr><td>GIBA Requinoa</td></tr>
-                <tr><td>Vosther Vóley Viña del Mar</td></tr>
-                <tr><td>Enigma Puente Alto</td></tr>
-                <tr><td>Puma Copiapó</td></tr>
-                <tr><td>San Martín de Quillota</td></tr>
+                <tr><td>Paul Harris Quillota</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>GIBA Requinoa</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Vosther Vóley Viña del Mar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Enigma Puente Alto</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Puma Copiapó</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>San Martín de Quillota</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
             </tbody>
         </table>
     </div>
 </div>
+
+<script>
+    // Datos iniciales de los equipos del Grupo B
+    let equiposB = [
+        { nombre: "Paul Harris Quillota", pts: 0, pj: 0, pg: 0, pp: 0 },
+        { nombre: "GIBA Requinoa", pts: 0, pj: 0, pg: 0, pp: 0 },
+        { nombre: "Vosther Vóley Viña del Mar", pts: 0, pj: 0, pg: 0, pp: 0 },
+        { nombre: "Enigma Puente Alto", pts: 0, pj: 0, pg: 0, pp: 0 },
+        { nombre: "Puma Copiapó", pts: 0, pj: 0, pg: 0, pp: 0 },
+        { nombre: "San Martín de Quillota", pts: 0, pj: 0, pg: 0, pp: 0 }
+    ];
+
+    function actualizarTablaB() {
+        let tabla = document.getElementById("tabla-equipos-b").getElementsByTagName("tbody")[0];
+
+        // Ordenar por PTS de mayor a menor
+        equiposB.sort((a, b) => b.pts - a.pts);
+
+        // Limpiar la tabla antes de actualizar
+        tabla.innerHTML = "";
+
+        // Agregar las filas actualizadas
+        equiposB.forEach(equipo => {
+            let fila = `<tr>
+                <td>${equipo.nombre}</td>
+                <td>${equipo.pts}</td>
+                <td>${equipo.pj}</td>
+                <td>${equipo.pg}</td>
+                <td>${equipo.pp}</td>
+            </tr>`;
+            tabla.innerHTML += fila;
+        });
+    }
+
+    
+    actualizarTablaB(); // Actualizar la tabla con los cambios
+</script>
 
 <!-- Partidos del Grupo B - Viernes 4 de Abril -->
 <h3>Partidos - Viernes 4 de Abril</h3>
