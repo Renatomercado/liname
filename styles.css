@@ -315,3 +315,10 @@ th {
     height: 450px; /* Mantiene la altura */
     border: 0;
 }
+
+.video-promocional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
