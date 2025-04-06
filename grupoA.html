@@ -83,12 +83,12 @@
         <script>
             // Datos iniciales de los equipos
             let equipos = [
-                { nombre: "Boston College", pts: 4, pj: 2, pg: 2, pp: 0 },
-                { nombre: "Planeta Volei La Serena", pts: 0, pj: 2, pg: 0, pp: 2 },
-                { nombre: "Dragons de Rancagua", pts: 0, pj: 2, pg: 0, pp: 2 },
-                { nombre: "Estadio Español", pts: 4, pj: 2, pg: 2, pp: 0 },
-                { nombre: "SLA Valdivia", pts: 4, pj: 2, pg: 2, pp: 0 },
-                { nombre: "Arturo Prat de San Felipe", pts: 0, pj: 2, pg: 0, pp: 2 }
+                { nombre: "Boston College", pts: 10, pj: 5, pg: 5, pp: 0 },
+                { nombre: "Planeta Volei La Serena", pts: 6, pj: 5, pg: 3, pp: 2 },
+                { nombre: "Dragons de Rancagua", pts: 2, pj: 5, pg: 1, pp: 4 },
+                { nombre: "Estadio Español", pts: 8, pj: 5, pg: 4, pp: 1 },
+                { nombre: "SLA Valdivia", pts: 4, pj: 5, pg: 2, pp: 3 },
+                { nombre: "Arturo Prat de San Felipe", pts: 0, pj: 5, pg: 0, pp: 5 }
             ];
         
             function actualizarTabla() {
@@ -147,15 +147,15 @@
                     <tr><th>Hora</th><th>Partido</th><th>Ganador</th><th>En Vivo</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>10:00</td><td>Boston College vs SLA Valdivia</td><td></td><td><a href="https://www.instagram.com/constructoressustentables/?igsh=MWtkdjdiY2F6OGtvaA%3D%3D#" target="_blank">📹</a></td></tr>
-                    <tr><td>11:00</td><td>Planeta Vólei La Serena vs Arturo Prat de San Felipe</td><td></td><td></td></tr>
-                    <tr><td>12:00</td><td>Dragons de Rancagua vs Estadio Español</td><td></td><td><a href="https://www.youtube.com/@ClubDragonsvoley" target="_blank">📹</a></td></tr>
-                    <tr><td>13:00</td><td>SLA Valdivia vs Planeta Vólei La Serena</td><td></td><td><a href="https://www.instagram.com/clubslavolley" target="_blank">📹</a></td></tr>
-                    <tr><td>14:00</td><td>Boston College vs Estadio Español</td><td></td><td><a href="https://www.instagram.com/constructoressustentables/?igsh=MWtkdjdiY2F6OGtvaA%3D%3D#" target="_blank">📹</a></td></tr>
-                    <tr><td>15:00</td><td>Arturo Prat de San Felipe vs Dragons de Rancagua</td><td></td><td><a href="https://www.youtube.com/@ClubDragonsvoley" target="_blank">📹</a></td></tr>
-                    <tr><td>16:00</td><td>SLA Valdivia vs Estadio Español</td><td></td><td><a href="https://www.instagram.com/clubslavolley" target="_blank">📹</a></td></tr>
-                    <tr><td>17:00</td><td>Boston College vs Arturo Prat de San Felipe</td><td></td><td><a href="https://www.instagram.com/constructoressustentables/?igsh=MWtkdjdiY2F6OGtvaA%3D%3D#" target="_blank">📹</a></td></tr>
-                    <tr><td>18:00</td><td>Planeta Vólei La Serena vs Dragons de Rancagua</td><td></td><td><a href="https://www.instagram.com/constructoressustentables/?igsh=MWtkdjdiY2F6OGtvaA%3D%3D#" target="_blank">📹</a></td></tr>
+                    <tr><td>10:00</td><td>Boston College vs SLA Valdivia</td><td>Boston College</td><td><a href="https://www.instagram.com/constructoressustentables/?igsh=MWtkdjdiY2F6OGtvaA%3D%3D#" target="_blank">📹</a></td></tr>
+                    <tr><td>11:00</td><td>Planeta Vólei La Serena vs Arturo Prat de San Felipe</td><td>Planeta Volei</td><td></td></tr>
+                    <tr><td>12:00</td><td>Dragons de Rancagua vs Estadio Español</td><td>Estadio Español</td><td><a href="https://www.youtube.com/@ClubDragonsvoley" target="_blank">📹</a></td></tr>
+                    <tr><td>13:00</td><td>SLA Valdivia vs Planeta Vólei La Serena</td><td>Planeta volei</td><td><a href="https://www.instagram.com/clubslavolley" target="_blank">📹</a></td></tr>
+                    <tr><td>14:00</td><td>Boston College vs Estadio Español</td><td>Boston College</td><td><a href="https://www.instagram.com/constructoressustentables/?igsh=MWtkdjdiY2F6OGtvaA%3D%3D#" target="_blank">📹</a></td></tr>
+                    <tr><td>15:00</td><td>Arturo Prat de San Felipe vs Dragons de Rancagua</td><td>Dragons</td><td><a href="https://www.youtube.com/@ClubDragonsvoley" target="_blank">📹</a></td></tr>
+                    <tr><td>16:00</td><td>SLA Valdivia vs Estadio Español</td><td>Estadio Español</td><td><a href="https://www.instagram.com/clubslavolley" target="_blank">📹</a></td></tr>
+                    <tr><td>17:00</td><td>Boston College vs Arturo Prat de San Felipe</td><td>Boston College</td><td><a href="https://www.instagram.com/constructoressustentables/?igsh=MWtkdjdiY2F6OGtvaA%3D%3D#" target="_blank">📹</a></td></tr>
+                    <tr><td>18:00</td><td>Planeta Vólei La Serena vs Dragons de Rancagua</td><td>Planeta Volei</td><td><a href="https://www.instagram.com/constructoressustentables/?igsh=MWtkdjdiY2F6OGtvaA%3D%3D#" target="_blank">📹</a></td></tr>
                 </tbody>
             </table>
         </div>
@@ -187,4 +187,5 @@
 
 </body>
 </html>
+
 
